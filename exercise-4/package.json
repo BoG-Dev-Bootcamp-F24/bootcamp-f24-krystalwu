@@ -1,9 +1,20 @@
 {
   "type": "module",
   "dependencies": {
-    "axios": "^1.5.0",
+    "axios": "^1.7.7",
     "https": "^1.0.0",
     "moment": "^2.29.4",
     "request": "^2.88.2"
-  }
+  },
+  "name": "exercise-4",
+  "version": "1.0.0",
+  "description": "## Description In this exercise, bootcampers will familiarize themselves with JS syntax and concepts through completing some JS functions.",
+  "main": "chooseTheTrain.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
