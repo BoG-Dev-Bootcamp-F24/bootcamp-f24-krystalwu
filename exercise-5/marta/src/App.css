@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+/* General Layout Styles */
+.container {
+    display: flex;
+    font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar {
+    width: 200px;
+    border-right: 2px solid #ccc;
+    padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content {
+    flex: 1;
+    padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #ccc;
 }
 
-.App-link {
-  color: #61dafb;
+.header h1 {
+    color: #333;
+    font-size: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tabs {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.tabs li {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    background-color: #555;
+}
+
+.tabs li.active {
+    background-color: darkorange;
+}
+
+/* Station List Styles */
+.station-list {
+    list-style: none;
+    padding: 0;
+}
+
+.station-list li {
+    padding: 10px 5px;
+    cursor: pointer;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+}
+
+.station-list li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Train List Styles */
+.train-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.train-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    background-color: #fafafa;
+}
+
+.train-details {
+    display: flex;
+    align-items: center;
+}
+
+.train-details strong {
+    margin-right: 10px;
+}
+
+.status-dot {
+    height: 15px;
+    width: 15px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* Overriding styles for specific train status */
+.status-dot.delayed {
+    background-color: red;
 }
